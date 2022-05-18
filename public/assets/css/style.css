@@ -1,0 +1,123 @@
+#bienvenido{
+
+    height: 650px;
+    width: 400px;
+    float: left;
+    background-image: url(https://img.lovepik.com/background/20211022/large/lovepik-abstract-blue-background-image_401898749.jpg);
+}
+#nombre-bienvenido{
+    margin-top: 50px;
+    position:  relative;
+    left: 50px;
+    color: aliceblue;
+}
+#text-bienvenido{
+   position: relative;
+   left: 70px;
+   top: 150px;
+    color: aliceblue;
+}
+#nombre-develop-bievenido{
+    color: aliceblue;
+    position: relative;
+    left: 30px;
+    top: 400px;
+}
+#marco{
+
+    height: 650px;
+    width: 910px;
+    float: right;
+    display: flex;
+}
+#formlogin{
+    width: 300px;
+    border: 2px solid gray;
+    margin: auto;
+    border-radius: 20px;
+}
+#caja_form{
+    padding: 20px;
+}
+#iniciar-sesion{
+text-align: center;
+}
+#caja-password{
+    width: 200px;
+    border: 1px solid red;
+    float: left;
+}
+#caja-ver{
+    border: 1px solid red;
+    width: 20px;
+    float: right;
+}
+#caja-button{
+    display: flex;
+    justify-content: center;
+}
+#button{
+text-align: center;
+
+}
+#caja-link{
+    display: flex;
+    justify-content: center;
+     margin-top: 20px                                                                                                                                      ;
+}
+a{
+    text-align: center;
+}
+
+header{
+    background-color: white;
+    border-bottom: 1px solid grey;
+
+    margin: auto;
+}
+
+#logo-plantilla{
+    padding-left: 100px;
+    padding-right: 200px;
+}
+#table-index{
+margin-top: 20px;
+
+}
+
+#nav-index{
+margin-top: 10px;
+
+width: 900px;
+float: left;
+padding-top: 10px;
+}
+
+#lnk-create{
+
+    width: 80px;
+    float: right;
+    margin-top: 10px;
+    margin-right: 50px;
+    padding-top: 10px;
+}
+#buscar{
+    width: 800px;
+    margin-right: 5px;
+}
+#boton{
+    display: flex;
+}
+#devolver{
+    position: relative;
+    left: 100px;
+}
+
+#boton-vehiculo{
+    border: 1 px
+    solid red  ;
+}
+.btn btn-primary{
+    border: 1px
+    solid red  ;
+}
