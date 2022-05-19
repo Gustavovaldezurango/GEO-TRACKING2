@@ -113,14 +113,7 @@ padding-top: 10px;
     left: 100px;
 }
 
-#boton-vehiculo{
-    border: 1 px
-    solid red  ;
-}
-.btn btn-primary{
-    border: 1px
-    solid red  ;
-}
+
 .caja-botonfooter{
     display: flex;
     justify-content: center;
@@ -128,4 +121,21 @@ padding-top: 10px;
 #botonfooter{
 text-align: center;
 
+}
+
+
+#input{
+
+    width: 350px;
+
+
+}
+.contain{
+
+    display: flex;
+
+}
+#icongmail{
+
+    height: 90px;
 }
