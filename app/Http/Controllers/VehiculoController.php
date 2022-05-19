@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Vehiculo;
 use Validator;
-use Illuminate\Support\Facades\Auth;
+//use Illuminate\Support\Facades\Auth;
 class VehiculoController extends Controller
 {
     /**
@@ -16,11 +16,11 @@ class VehiculoController extends Controller
     public function index()
 
     {
-        if(Auth::check()){
+      /*  if(Auth::check()){
             return redirect('/vehiculos');
         }else{
             return redirect('/login');
-        }
+        }*/
          $vehiculos = Vehiculo::all();
         return view('vehiculo.index')->with('vehiculos', $vehiculos);
     }
@@ -108,32 +108,7 @@ class VehiculoController extends Controller
 }
 
 
-        //$image = $request -> file('tecnomecanica');
-        //$nombre =  time().'.'.$image->getClienteOriginalExtension();
-        //$destino = public_path('img/vehiculos');
-        //$request->move($destino,$nombre);
-        //dd("si subio");
-
-        //$image = $request -> file('soat');
-        //$nombre =  time().'.'.$image->getClienteOriginalExtension();
-        //$destino = public_path('img/vehiculos');
-        //$request->move($destino,$nombre);
-      //  dd("si subio");
-
-       // $image = $request -> file('targetapropiedad');
-       // $nombre =  time().'.'.$image->getClienteOriginalExtension();
-       // $destino = public_path('img/vehiculos');
-       // $request->move($destino,$nombre);
-       // dd("si subio");
-
-
-
-
-
-
-
-
-    /**
+     /**
      * Display the specified resource.
      *
      * @param  int  $id
@@ -170,7 +145,7 @@ class VehiculoController extends Controller
     public function update(Request $request, $id)
     {
         $vehiculo = Vehiculo::find($id);
-        $vehiculo =  new Vehiculo();
+
         $vehiculo->conductor = $request->conductor;
         $vehiculo->documentoconductor = $request->documentoconductor;
         $vehiculo->modelo = $request->modelo;

@@ -28,7 +28,7 @@
         @enderror
     </div>
 
-    <br>
+
     <br>
 
     <div class="row">
@@ -49,7 +49,7 @@
         </div>
     </div>
 
-    <br>
+
     <br>
 
       <div class="row">
@@ -63,7 +63,7 @@
         </div>
 
         <div class="col">
-          <input type="file" class="form-control" placeholder="Logo" aria-label="logo" name="logo"  value="{{$empresa->logo}}" >
+          <input type="text" class="form-control" placeholder="Logo" aria-label="logo" name="logo"  value="{{$empresa->logo}}" >
           @error('logo')
           <small>*{{$message}}</small>
           @enderror
@@ -71,7 +71,7 @@
         </div>
     </div>
 
-    <br>
+
     <br>
 
     <div class="row">
@@ -92,7 +92,7 @@
 
         </div>
     </div>
-      <br>
+
       <br>
       <div class="modal-footer">
         <button type="submit"  class="btn btn-primary" tabindex="4">crear</button>

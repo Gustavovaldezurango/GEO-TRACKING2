@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use  Validator;
 use App\Models\Conductor;
-use Illuminate\Support\Facades\Auth;
+//use Illuminate\Support\Facades\Auth;
 class ConductorController extends Controller
 {
     /**
@@ -15,11 +15,9 @@ class ConductorController extends Controller
      */
     public function index()
     {
-        if(Auth::check()){
-            return redirect('/conductors');
-        }else{
-            return redirect('/login');
-        }
+       // if(Auth::check()){
+         //  return redirect('/conductors');
+        //}
         $conductors = Conductor::all();
         return view('conductor.index')->with('conductors',$conductors);
     }
@@ -86,17 +84,17 @@ class ConductorController extends Controller
             $destinationPath = public_path('img\conductor\hojadevida');
             $image->move($destinationPath, $image_name);
 
-            $conductor =  new Conductor();
-            $conductor->nombre = $request->nombre;
-            $conductor->apellido = $request->apellido;
-            $conductor->telefono = $request->telefono;
-            $conductor->direccion = $request->direccion;
-            $conductor->nopase = $request->nopase;
-            $conductor->pase = $request->pase;
-            $conductor->cedula = $request->cedula;
-            $conductor->hojavida = $request->hojavida;
+            $conductors =  new Conductor();
+            $conductors->nombre = $request->nombre;
+            $conductors->apellido = $request->apellido;
+            $conductors->telefono = $request->telefono;
+            $conductors->direccion = $request->direccion;
+            $conductors->nopase = $request->nopase;
+            $conductors->pase = $request->pase;
+            $conductors->cedula = $request->cedula;
+            $conductors->hojavida = $request->hojavida;
 
-            $conductor->save();
+            $conductors->save();
             return back()->with('Listo', 'se ha creado correctamente ');
         }
 
@@ -136,15 +134,15 @@ class ConductorController extends Controller
     public function update(Request $request, $id)
     {
         $conductor = Conductor::find($id);
-        $conductor =  new Conductor();
-        $conductor->nombre = $request->get('nombre');
-        $conductor->apellido = $request->get('apellido');
-        $conductor->telefono = $request->get('telefono');
-        $conductor->direccion = $request->get('direccion');
-        $conductor->nopase = $request->get('nopase');
-        $conductor->pase = $request->get('pase');
-        $conductor->cedula = $request->get('cedula');
-        $conductor->hojavida = $request->get('hojavida');
+
+        $conductor->nombre = $request->nombre;
+        $conductor->apellido = $request->apellido;
+        $conductor->telefono = $request->telefono;
+        $conductor->direccion = $request->direccion;
+        $conductor->nopase = $request->nopase;
+        $conductor->pase = $request->pase;
+        $conductor->cedula = $request->cedula;
+        $conductor->hojavida = $request->hojavida;
 
         $conductor->save();
         return redirect('/conductors');

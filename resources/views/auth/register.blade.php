@@ -4,9 +4,10 @@
         <h3 id="iniciar-sesion">Registrarse</h3>
         <form action="/register" method="POST">
             @csrf
+
             <div class="mb-3">
                 <small>Username</small>
-                <input type="text" name="username" class="form-control" id="username" aria-describedby="username" placeholder="Ingrese su nombre">
+                <input type="text" name="username" class="form-control" id="username" aria-describedby="username" placeholder="Ingrese su nombre" required value="{{old('username')}} ">
                 @error('username')
                 <small>*{{$message}}</small>
                 @enderror
@@ -14,21 +15,21 @@
             </div>
             <div class="mb-3">
                 <small>Email</small>
-                <input type="email" name="email" class="form-control" id="email" aria-describedby="email" placeholder="Ingrese su gmail">
+                <input type="email" name="email" class="form-control" id="email" aria-describedby="email" placeholder="Ingrese su gmail" required value="{{old('email')}}">
                 @error('email')
                 <small>*{{$message}}</small>
                 @enderror
             </div>
             <div class="mb-3">
                 <small>Password</small>
-                <input type="password" name="password" class="form-control" id="password">
+                <input type="password" name="password" class="form-control" id="password" required>
                 @error('password')
                 <small>*{{$message}}</small>
                 @enderror
             </div>
             <div class="mb-3">
                 <small>password_confirmation</small>
-                <input type="password" name="password_confirmation" class="form-control" id="password">
+                <input type="password" name="password_confirmation" class="form-control" id="password" required>
                 @error('password_confirmation')
                 <small>*{{$message}}</small>
                 @enderror

@@ -98,8 +98,8 @@
     </div>
 
       <br>
-      <div class="modal-footer">
-        <button type="submit"  class="btn btn-primary" tabindex="4">editar</button>
+      <div class="caja-botonfooter">
+        <button type="submit"  class="btn btn-primary" id="botonfooter">Editar</button>
       </div>
 </div>
 </form>

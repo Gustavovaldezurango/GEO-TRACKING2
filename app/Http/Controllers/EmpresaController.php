@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Empresa;
 use Validator;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Auth;
+//se Illuminate\Support\Facades\Auth;
 
 class EmpresaController extends Controller
 {
@@ -18,11 +18,11 @@ class EmpresaController extends Controller
     public function index( Request $request)
 
     {
-        if(Auth::check()){
-            return redirect('/empresas');
-        }else{
-            return redirect('/login');
-        }
+       // if(Auth::check()){
+         //   return redirect('/empresas');
+        //}else{
+          //  return redirect('/login');
+        //}
         $texto=trim($request->get('texto'));
         $empresas =DB::table('empresas')
         ->select('id','nombre', 'kit', 'direccion', 'personacontacto',
@@ -135,7 +135,7 @@ class EmpresaController extends Controller
     public function update(Request $request, $id)
     {
         $empresa =  Empresa::find($id);
-             $empresa->nombre = $request->nombre;
+            $empresa->nombre = $request->nombre;
             $empresa->kit = $request->kit;
             $empresa->direccion = $request->direccion;
             $empresa->personacontacto = $request->personacontacto;

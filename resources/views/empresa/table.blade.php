@@ -67,7 +67,7 @@
 
                  @csrf
                   @method('delete')
-                <button  type="submit" class="btn btn-danger  btn-sm"> Borrar</button>
+                <button  type="submit" class="btn btn-danger  btn-sm" onclick=" return confirmareliminar()"> Borrar</button>
             </form>
             </td>
         </tr>
@@ -76,4 +76,16 @@
         @endif
     </tbody>
 </table>
-{{$empresas->links()}}
+<script>
+function confirmareliminar(){
+
+    var  pregunta = confirm('Estas segudo que deseas eliminar?')
+if ( pregunta == true){
+    return true;
+}else{
+   return false;
+
+}
+}
+
+</script>

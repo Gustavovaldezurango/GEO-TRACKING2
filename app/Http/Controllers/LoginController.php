@@ -11,6 +11,7 @@ class LoginController extends Controller
     public function show(){
         if(Auth::check()){
             return redirect('/home');
+
         }
 
 
@@ -21,7 +22,7 @@ class LoginController extends Controller
        $credentials = $request->getCredentials();
 
        if (!Auth::validate($credentials)){
-           return redirect()->to('/login')->withErrors('auth.failed');
+           return redirect()->to('/login')->with('Error', 'Username o password incorrecto');
 
        }
 
@@ -32,8 +33,7 @@ class LoginController extends Controller
     }
 
     public function authenticated(Request $request, $user){
-        return redirect('/home');
-
+        return redirect('/home')->with('listo', 'has iniciado sesion');;
 
     }
 

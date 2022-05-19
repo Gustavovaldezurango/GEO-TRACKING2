@@ -1,7 +1,7 @@
 <div id="div-index">
 
     @if($message = Session::get('ErrorInsert'))
-    <div class="col-3 alert alert-danger alert-dismissable fade show">
+    <div class="col-4 alert alert-danger alert-dismissable fade show">
         {{'Por favor llenar todos los campos correctamente'}}
     </div>
     @endif
@@ -58,7 +58,7 @@
 
                     @csrf
                      @method('delete')
-                   <button  type="submit" class="btn btn-danger btn-sm"> Borrar</button>
+                   <button  type="submit" class="btn btn-danger btn-sm" onclick=" return confirmareliminar()">Borrar</button>
                </form>
             </td>
         </tr>
@@ -66,3 +66,17 @@
         @endforeach
     </tbody>
 </table>
+
+<script>
+function confirmareliminar(){
+
+    var  pregunta = confirm('Estas segudo que deseas eliminar?')
+if ( pregunta == true){
+    return true;
+}else{
+   return false;
+
+}
+}
+
+</script>

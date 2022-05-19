@@ -75,7 +75,7 @@
 
         <div class="col">
             <small>tecnico mecanica</small>
-            <input type="file" class="form-control" placeholder="Tecnico-Mecanica" aria-label="Tecnico-Mecanica" name="tecnomecanica" value="{{$vehiculo->tecnomecanica}}">
+            <input type="text" class="form-control" placeholder="Tecnico-Mecanica" aria-label="Tecnico-Mecanica" name="tecnomecanica" value="{{$vehiculo->tecnomecanica}}">
             @error('tecnomecanica')
             <small>*{{'El campo tecnico mecanica es obligatorio.'}}</small>
             @enderror
@@ -83,7 +83,7 @@
 
         <div class="col">
             <small>SOAT</small>
-            <input type="file" class="form-control" placeholder="SOAT" aria-label="SOAT" name="soat" value="{{$vehiculo->soat}}">
+            <input type="text" class="form-control" placeholder="SOAT" aria-label="SOAT" name="soat" value="{{$vehiculo->soat}}">
             @error('soat')
           <small>*{{$message}}</small>
           @enderror
@@ -97,7 +97,7 @@
 
         <div class="col">
             <small>Tarjeta De Propiedad</small>
-            <input type="file" class="form-control"  aria-label="Targeta de Propiedad" name="targetapropiedad" value="{{$vehiculo->targetapropiedad}}">
+            <input type="text" class="form-control"  aria-label="Targeta de Propiedad" name="targetapropiedad" value="{{$vehiculo->targetapropiedad}}">
             @error('targetapropiedad')
             <small>*{{'El campo targeta de propiedad es obligatorio.'}}</small>
             @enderror

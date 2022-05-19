@@ -23,7 +23,7 @@
                         <div class="row">
 
                             <div class="col">
-
+                                <small>Nombre</small>
                                 <input type="text" class="form-control" placeholder=" Nombre" aria-label="Nombre"
                                     name="nombre" value="{{ old('nombre') }}">
                                 @error('nombre')
@@ -33,7 +33,8 @@
                             </div>
 
                             <div class="col">
-                                <input type="text" class="form-control" placeholder="Kit" aria-label="Kit" name="kit"
+                                <small>Nit</small>
+                                <input type="text" class="form-control" placeholder="Nit" aria-label="Nit" name="kit"
                                     value="{{ old('kit') }}">
                                 @error('Kit')
                                     <small>*{{ $message }}</small>
@@ -42,14 +43,15 @@
                         </div>
 
                         <br>
-                        <br>
+
 
                         <div class="row">
 
                             <div class="col">
+                                <small>Direccion</small>
                                 <input type="text" class="form-control" placeholder="Direccion" aria-label="Direccion"
                                     name="direccion" value="{{ old('direccion') }}">
-                                @error('personacontacto')
+                                @error('direccion')
                                     <small>*{{ $message }}</small>
                                 @enderror
 
@@ -58,6 +60,7 @@
 
 
                             <div class="col">
+                                <small>Persona de contacto</small>
                                 <input type="text" class="form-control" placeholder="Persona de contacto"
                                     aria-label="personacontacto" name="personacontacto"
                                     value="{{ old('personacontacto') }}">
@@ -68,12 +71,13 @@
                             </div>
                         </div>
 
-                        <br>
+
                         <br>
 
                         <div class="row">
 
                             <div class="col">
+                                <small>Telefono de contacto</small>
                                 <input type="text" class="form-control" placeholder="Telefono de contacto"
                                     aria-label="telefonocontacto" name="telefonocontacto"
                                     value="{{ old('telefonocontacto') }}">
@@ -84,6 +88,7 @@
                             </div>
 
                             <div class="col">
+                                <small>Logo</small>
                                 <input type="file" class="form-control" placeholder="Logo" aria-label="logo"
                                     name="logo">
                                 @error('logo')
@@ -94,12 +99,12 @@
                         </div>
 
                         <br>
-                        <br>
+
 
                         <div class="row">
 
                             <div class="col">
-
+                                <small> Correo</small>
                                 <input type="email" class="form-control" placeholder="Correo" aria-label="correo"
                                     name="correo" value="{{ old('correo') }}">
                                 @error('correo')
@@ -108,6 +113,7 @@
 
                             </div>
                             <div class="col">
+                                <small> Contraseña</small>
                                 <input type="password" class="form-control" placeholder="Contraseña"
                                     aria-label="contraseña" name="contraseña">
                                 @error('contraseña')
@@ -117,9 +123,9 @@
                             </div>
                         </div>
                         <br>
-                        <br>
-                        <div class="modal-footer">
-                            <button type="submit" class="btn btn-primary" tabindex="4">crear</button>
+
+                        <div class="caja-botonfooter">
+                            <button type="submit" class="btn btn-primary" id="botonfooter">Crear</button>
                         </div>
             </div>
             </form>
