@@ -51,7 +51,7 @@ class VehiculoController extends Controller
             'modelo' => 'required|string',
             'anno' => 'required|numeric',
             'matricula' => 'required|string',
-            'placa' => 'required|numeric',
+            'placa' => 'required',
             'tecnomecanica' => 'required',
             'soat' => 'required|' ,//image|mimes:jpg,jpeg,gif,svg|max:2048',
             'targetapropiedad' => 'required',

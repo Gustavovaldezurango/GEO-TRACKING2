@@ -9,12 +9,12 @@
         <tr>
             <th scope= "col">Nombre</th>
             <th scope= "col">Apellido</th>
-            <th scope= "col">Telefono</th>
-            <th scope= "col">Direccion</th>
+            <th scope= "col">Dirección</th>
+            <th scope= "col">Dirección</th>
             <th scope= "col">No. Pase</th>
             <th scope= "col">Pase</th>
-            <th scope= "col">cedula</th>
-            <th scope= "col">hola de vida</th>
+            <th scope= "col">Cedula</th>
+            <th scope= "col">Hoja de Vida</th>
         </tr>
     </thead>
     <tbody>
@@ -36,7 +36,10 @@
 
     </tbody>
 </table>
-<a href="/conductors"  class=" btn btn-success">Devolver</a>
 
 
+<div class="caja-botonfooter">
+
+    <a href="/conductors"  class=" btn btn-success" id="botonfooter">Volver</a>
+  </div>
 @endsection

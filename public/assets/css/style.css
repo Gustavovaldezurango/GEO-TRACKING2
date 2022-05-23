@@ -139,3 +139,10 @@ text-align: center;
 
     height: 90px;
 }
+
+/*vista map
+*/
+#map{
+    height: 500px;
+    width: 100%;
+}

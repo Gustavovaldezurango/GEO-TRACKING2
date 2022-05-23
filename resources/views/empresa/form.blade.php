@@ -23,21 +23,21 @@
                         <div class="row">
 
                             <div class="col">
-                                <small>Nombre</small>
+                                <small>*Nombre</small>
                                 <input type="text" class="form-control" placeholder=" Nombre" aria-label="Nombre"
-                                    name="nombre" value="{{ old('nombre') }}">
+                                    name="nombre" value="{{ old('nombre') }}" required>
                                 @error('nombre')
-                                    <small>*{{ $message }}</small>
+                                    <small>{{ $message }}</small>
                                 @enderror
 
                             </div>
 
                             <div class="col">
-                                <small>Nit</small>
+                                <small>*Nit</small>
                                 <input type="text" class="form-control" placeholder="Nit" aria-label="Nit" name="kit"
-                                    value="{{ old('kit') }}">
+                                    value="{{ old('kit') }}" required>
                                 @error('Kit')
-                                    <small>*{{ $message }}</small>
+                                    <small>{{ $message }}</small>
                                 @enderror
                             </div>
                         </div>
@@ -48,11 +48,11 @@
                         <div class="row">
 
                             <div class="col">
-                                <small>Direccion</small>
+                                <small>*Dirección</small>
                                 <input type="text" class="form-control" placeholder="Direccion" aria-label="Direccion"
-                                    name="direccion" value="{{ old('direccion') }}">
+                                    name="direccion" value="{{ old('direccion') }}" required>
                                 @error('direccion')
-                                    <small>*{{ $message }}</small>
+                                    <small>{{ $message }}</small>
                                 @enderror
 
                             </div>
@@ -60,12 +60,12 @@
 
 
                             <div class="col">
-                                <small>Persona de contacto</small>
+                                <small>*Persona de contacto</small>
                                 <input type="text" class="form-control" placeholder="Persona de contacto"
                                     aria-label="personacontacto" name="personacontacto"
-                                    value="{{ old('personacontacto') }}">
+                                    value="{{ old('personacontacto') }}" required>
                                 @error('personacontacto')
-                                    <small>*{{ $message }}</small>
+                                    <small>{{ $message }}</small>
                                 @enderror
 
                             </div>
@@ -77,10 +77,10 @@
                         <div class="row">
 
                             <div class="col">
-                                <small>Telefono de contacto</small>
+                                <small>*Teléfono de contacto</small>
                                 <input type="text" class="form-control" placeholder="Telefono de contacto"
                                     aria-label="telefonocontacto" name="telefonocontacto"
-                                    value="{{ old('telefonocontacto') }}">
+                                    value="{{ old('telefonocontacto') }}" required>
                                 @error('telefonocontacto')
                                     <small>*{{ $message }}</small>
                                 @enderror
@@ -88,11 +88,11 @@
                             </div>
 
                             <div class="col">
-                                <small>Logo</small>
+                                <small>*Logo</small>
                                 <input type="file" class="form-control" placeholder="Logo" aria-label="logo"
-                                    name="logo">
+                                    name="logo" required>
                                 @error('logo')
-                                    <small>*{{ $message }}</small>
+                                    <small>{{ $message }}</small>
                                 @enderror
 
                             </div>
@@ -104,20 +104,20 @@
                         <div class="row">
 
                             <div class="col">
-                                <small> Correo</small>
+                                <small>*Correo</small>
                                 <input type="email" class="form-control" placeholder="Correo" aria-label="correo"
-                                    name="correo" value="{{ old('correo') }}">
+                                    name="correo" value="{{ old('correo') }}" required>
                                 @error('correo')
-                                    <small>*{{ $message }}</small>
+                                    <small>{{ $message }}</small>
                                 @enderror
 
                             </div>
                             <div class="col">
-                                <small> Contraseña</small>
+                                <small>*Contraseña</small>
                                 <input type="password" class="form-control" placeholder="Contraseña"
-                                    aria-label="contraseña" name="contraseña">
+                                    aria-label="contraseña" name="contraseña" required>
                                 @error('contraseña')
-                                    <small>*{{ $message }}</small>
+                                    <small>{{ $message }}</small>
                                 @enderror
 
                             </div>

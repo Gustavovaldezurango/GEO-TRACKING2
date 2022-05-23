@@ -26,6 +26,7 @@ Route::get('/register', [RegisterController::class, 'show']);
 
 Route::post('/register', [RegisterController::class, 'register']);
 
+Route::get('/maps' ,function(){return  view('/maps.index');});
 
 
 

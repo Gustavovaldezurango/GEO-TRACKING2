@@ -16,14 +16,14 @@ return new class extends Migration
         Schema::create('vehiculos', function (Blueprint $table) {
             $table->id();
             $table->string('conductor');
-            $table->integer('documentoconductor');
+            $table->biginteger('documentoconductor');
             $table->string('modelo');
             $table->integer('anno');
             $table->string('matricula');
-            $table-> integer('placa');
-            $table->string('tecnomecanica');
-            $table->string('soat');
-            $table->string('targetapropiedad');
+            $table->string('placa');
+            $table->string('tecnomecanica')->nullable();
+            $table->string('soat')->nullable();
+            $table->string('targetapropiedad')->nullable();
             $table->date('fechavencimiento');
             $table->timestamps();
         });

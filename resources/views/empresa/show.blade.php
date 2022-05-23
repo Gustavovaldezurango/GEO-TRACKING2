@@ -10,9 +10,9 @@
         <tr>
             <th scope= "col">Nombre</th>
             <th scope= "col">kit</th>
-            <th scope= "col">Direccion</th>
+            <th scope= "col">Dirección</th>
             <th scope= "col">nombre de contacto</th>
-            <th scope= "col">Telefono de contacto</th>
+            <th scope= "col">Teléfono de contacto</th>
             <th scope= "col">correo</th>
             <th scope= "col">Logo</th>
         </tr>
@@ -32,16 +32,15 @@
 
     </tbody>
 
-    <tfoot>
-        <tr>
-            <td colspan="7" id="boton"><a href="/empresas" class=" btn btn-success">Devolver</a></td>
-        </tr>
 
 
-    </tfoot>
+
 </table>
 
+<div class="caja-botonfooter">
 
+    <a href="/empresas"  class=" btn btn-success" id="botonfooter">Volver</a>
+  </div>
 
 
 @endsection

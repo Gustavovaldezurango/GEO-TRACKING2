@@ -17,12 +17,12 @@ return new class extends Migration
             $table->id();
             $table->string('nombre');
             $table->string('apellido');
-            $table->integer('telefono');
+            $table->biginteger('telefono');
             $table->string('direccion');
-            $table->integer('nopase');
-            $table->string('pase');
-            $table->string('cedula');
-            $table->string('hojavida');
+            $table->biginteger('nopase');
+            $table->string('pase')->nullable();
+            $table->string('cedula')->nullable();
+            $table->string('hojavida')->nullable();
             $table->timestamps();
         });
     }

@@ -11,11 +11,11 @@
             <th scope= "col">Documento de Conductor</th>
             <th scope= "col">Modelo</th>
             <th scope= "col">Año</th>
-            <th scope= "col">Matricula</th>
+            <th scope= "col">Matrícula</th>
             <th scope= "col">Placa</th>
-            <th scope= "col">Tecnico Mecanica</th>
+            <th scope= "col">Técnico-Mecanica</th>
             <th scope= "col">SOAT</th>
-            <th scope= "col">Targeta De Propiedad</th>
+            <th scope= "col">Tarjeta De Propiedad</th>
             <th scope= "col">Fecha De Vencimiento</th>
         </tr>
     </thead>
@@ -41,8 +41,12 @@
 
 
 </table>
-<a href="/vehiculos"  class=" btn btn-success">Devolver</a>
 
+
+<div class="caja-botonfooter">
+
+    <a href="/vehiculos" class=" btn btn-success" id="botonfooter">Volver</a>
+  </div>
 
 
 @endsection

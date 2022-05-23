@@ -16,7 +16,7 @@
     <nav id="nav-index">
         <form action="get">
              <input type="text" placeholder=" Buscar" id="buscar">
-             <input type="submit" value="Filtar" class="btn btn-primary">
+             <input type="submit" value="Filtrar" class="btn btn-primary">
         </form>
     </nav>
 <nav id="lnk-create">
@@ -34,9 +34,9 @@
         <th scope= "col">Conductor</th>
         <th scope= "col">Modelo</th>
         <th scope= "col">Año</th>
-        <th scope= "col">Matricula</th>
+        <th scope= "col">Matrícula</th>
         <th scope= "col">Placa</th>
-        <th scope= "col">Tecnomecanica</th>
+        <th scope= "col">Técnico-Mecanica</th>
         <th scope= "col">SOAT</th>
     </tr>
 </thead>
@@ -90,7 +90,7 @@
 <script>
 function confirmareliminar(){
 
-    var  pregunta = confirm('Estas segudo que deseas eliminar?')
+    var  pregunta = confirm('Estas seguro que deseas eliminar?')
 if ( pregunta == true){
     return true;
 }else{

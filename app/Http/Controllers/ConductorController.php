@@ -46,9 +46,7 @@ class ConductorController extends Controller
             'telefono'=>'required|min:5|numeric',
             'direccion'=>'required',
             'nopase'=>'required|numeric',
-            'pase'=>'required',
-            'cedula'=>'required',
-            'hojavida'=>'required',
+
 
         ]);
         if($validator ->fails()){

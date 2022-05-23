@@ -19,8 +19,8 @@ return new class extends Migration
             $table->string('kit');
             $table->string('direccion');
             $table->string('personacontacto');
-            $table->integer('telefonocontacto');
-            $table->string('logo');
+            $table->biginteger('telefonocontacto');
+            $table->string('logo')->nullable();
             $table->string('correo');
             $table->string('contraseña');
             $table->timestamps();

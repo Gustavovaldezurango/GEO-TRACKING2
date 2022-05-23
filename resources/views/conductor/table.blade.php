@@ -20,7 +20,7 @@
         <nav id="nav-index">
             <form action="get">
                  <input type="text" placeholder=" Buscar" id="buscar">
-                 <input type="submit" value="Filtar" class="btn btn-primary">
+                 <input type="submit" value="Filtrar"  class="btn btn-primary">
             </form>
         </nav>
         <nav id="lnk-create">
@@ -37,8 +37,8 @@
         <tr>
             <th scope= "col">Nombre</th>
             <th scope= "col">Apellido</th>
-            <th scope= "col">Telefono</th>
-            <th scope= "col">Direccion</th>
+            <th scope= "col">Teléfono</th>
+            <th scope= "col">Dirección</th>
             <th scope= "col">No. Pase</th>
         </tr>
     </thead>
@@ -90,7 +90,7 @@
 <script>
 function confirmareliminar(){
 
-    var  pregunta = confirm('Estas segudo que deseas eliminar?')
+    var  pregunta = confirm('Estas seguro que deseas eliminar?')
 if ( pregunta == true){
     return true;
 }else{

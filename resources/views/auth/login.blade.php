@@ -1,7 +1,7 @@
 @extends('layouts.plantillalogin')
 @section('content')
     <div id="caja_form">
-        <h3 id="iniciar-sesion">Iniciar Sesion</h3>
+        <h3 id="iniciar-sesion">Iniciar Sesión</h3>
         <form action="/login" method="POST">
             @csrf
             @if ($message = Session::get('Error'))
@@ -56,7 +56,7 @@
 
 
             <div id="caja-button">
-                <button id="button" type="submit" class="btn btn-primary">Iniciar Sesion</button>
+                <button id="button" type="submit" class="btn btn-primary">Iniciar Sesión</button>
 
             </div>
         </form>

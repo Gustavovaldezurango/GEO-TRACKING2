@@ -2,7 +2,7 @@
 
 @section('contenido')
 
-@include('conductor.table');
+@include('conductor.table')
 
 @endsection
 

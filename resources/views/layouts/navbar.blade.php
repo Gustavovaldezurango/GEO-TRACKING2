@@ -21,7 +21,8 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
             <div id="logo-plantilla">
-                <img src="img/logo.jpg">
+
+                <img src="/img/logo.jpg" title="geo-traking">
             </div>
             <div class="container-fluid">
                 <div class="collapse navbar-collapse" id="navbarNav">
